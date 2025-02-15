@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Главная</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <nav class="navigation">
         <ul class="site-nav-list">
           <li class="site-nav-item">
-            <a class="site-nav-link site-nav-link-current" href="index.html" aria-current="page">Главная</a>
+            <a class="site-nav-link" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="#">О Седоне</a>
@@ -36,7 +37,7 @@
             </a>
           </li>
           <li class="user-nav-item">
-            <a class="user-nav-link button" href="#">Хочу сюда!</a>
+            <a class="user-nav-link button button-primary" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -90,7 +91,7 @@
         <h2 class="visually-hidden">Инфраструктура Седоны и рекомендации туристам</h2>
         <p class="section-heading">Приезжайте в&nbsp;Седону отдохнуть в&nbsp;комфорте и&nbsp;уюте!</p>
         <p class="subheading">Опытный персонал и&nbsp;качественное обслуживание!</p>
-        <ul class="recommendations">
+        <ul class="recommendations-list">
           <li class="recommendations-item">
             <h3 class="recommendations-item-title">Жильё</h3>
             <p class="recommendations-item-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
@@ -108,15 +109,15 @@
       <section class="search">
         <h2 class="section-heading">Заинтересовались?</h2>
         <p class="subheading">Укажите предполагаемые даты поездки,и мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
-        <button class="search-button button" type="button">Поиск гостиницы в&nbsp;Cедоне</button>
+        <button class="search-button button button-primary" type="button">Поиск гостиницы в&nbsp;Cедоне</button>
       </section>
-      <section class="subscription">
+      <section class="subscription subscription-illustrated">
         <h2 class="section-heading">Подпишитесь на&nbsp;рассылку</h2>
         <p class="subheading">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
           <input class="subscription-input" id="subscription-field" name="subscription" type="email" required>
-          <button class="subscription-button button" type="submit">Подписаться</button>
+          <button class="subscription-button button button-secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

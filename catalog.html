@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -20,7 +21,7 @@
             <a class="site-nav-link" href="#">О Седоне</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-link site-nav-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+            <a class="site-nav-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-nav-list">
@@ -36,7 +37,7 @@
             </a>
           </li>
           <li class="user-nav-item">
-            <a class="user-nav-link button" href="#">Хочу сюда!</a>
+            <a class="user-nav-link button button-primary" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -102,7 +103,7 @@
             </label>
           </fieldset>
           <div class="filter-form-buttons">
-            <button class="filter-form-button button" type="submit">Применить</button>
+            <button class="filter-form-button button button-secondary" type="submit">Применить</button>
             <button class="filter-form-button button" type="reset">Сбросить</button>
           </div>
         </form>
@@ -141,8 +142,8 @@
             </a>
             <p class="card-type">Гостиница</p>
             <p class="card-price">От 4000 ₽</p>
-            <a class="card-details button" href="#">Подробнее</a>
-            <button class="card-fav button" type="button">В избранное</button>
+            <a class="card-details button button-primary" href="#">Подробнее</a>
+            <button class="card-fav button button-secondary" type="button">В избранное</button>
             <p class="card-stars card-stars-four">
               <span class="visually-hidden">4 звезды из 5</span>
             </p>
@@ -157,8 +158,8 @@
             </a>
             <p class="card-type">Гостиница</p>
             <p class="card-price">От 5000 ₽</p>
-            <a class="card-details button" href="#">Подробнее</a>
-            <button class="card-fav card-fav-active button" type="button">В избранном</button>
+            <a class="card-details button button-primary" href="#">Подробнее</a>
+            <button class="card-fav button button-selected" type="button">В избранном</button>
             <p class="card-stars card-stars-four">
               <span class="visually-hidden">4 звезды из 5</span>
             </p>
@@ -173,8 +174,8 @@
             </a>
             <p class="card-type">Гостиница</p>
             <p class="card-price">От 2500 ₽</p>
-            <a class="card-details button" href="#">Подробнее</a>
-            <button class="card-fav button" type="button">В избранное</button>
+            <a class="card-details button button-primary" href="#">Подробнее</a>
+            <button class="card-fav button button-secondary" type="button">В избранное</button>
             <p class="card-stars card-stars-three">
               <span class="visually-hidden">3 звезды из 5</span>
             </p>
@@ -189,8 +190,8 @@
             </a>
             <p class="card-type">Гостиница</p>
             <p class="card-price">От 1500 ₽</p>
-            <a class="card-details button" href="#">Подробнее</a>
-            <button class="card-fav button" type="button">В избранное</button>
+            <a class="card-details button button-primary" href="#">Подробнее</a>
+            <button class="card-fav button button-secondary" type="button">В избранное</button>
             <p class="card-stars card-stars-two">
               <span class="visually-hidden">2 звезды из 5</span>
             </p>
@@ -224,7 +225,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
           <input class="subscription-input" id="subscription-field" name="subscription" type="email" required>
-          <button class="subscription-button button" type="submit">Подписаться</button>
+          <button class="subscription-button button button-secondary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
