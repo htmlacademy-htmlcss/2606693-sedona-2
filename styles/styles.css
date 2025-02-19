@@ -16,8 +16,8 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 1.18;
   color: #333333;
   background-color: #f2f2f2;
 }
@@ -25,7 +25,7 @@ body {
 .button {
   font-family: inherit;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -51,14 +51,14 @@ body {
 
 .page-heading {
   font-size: 60px;
-  line-height: 78px;
+  line-height: 1.3;
   font-weight: 700;
   color: #000000;
 }
 
 .section-heading {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -66,8 +66,6 @@ body {
 }
 
 .subheading {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #333;
 }
@@ -79,17 +77,16 @@ body {
 
 .site-nav-link {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
   color: inherit;
 }
 
 .user-nav-badge {
   font-size: 10px;
-  line-height: 10px;
+  line-height: 1;
   text-align: center;
   color: #ffffff;
   background-color: #7db54f;
@@ -98,7 +95,7 @@ body {
 .hero {
   background-color: #756157;
   background-image: url("../images/decor/section-background/hero-divider.svg"), url("../images/decor/section-background/hero.jpg");
-  background-position: left bottom, center;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
 }
@@ -126,10 +123,15 @@ body {
 
 .advantages-item-title {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.advantages-item-description {
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 .advantages-item-illustrated .advantages-item-title {
@@ -154,10 +156,15 @@ body {
 
 .recommendations-item-title {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.recommendations-item-description {
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 .search {
@@ -167,7 +174,7 @@ body {
 
 .search-button {
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.8;
 }
 
 .subscription {
@@ -193,7 +200,8 @@ body {
 }
 
 .subscription-control {
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.33;
   color: #000000;
   opacity: 0.6;
 }
@@ -201,7 +209,7 @@ body {
 .subscription-input {
   font-family: inherit;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
@@ -209,7 +217,7 @@ body {
 
 .subscription-button {
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.8;
 }
 
 .page-footer {
@@ -222,7 +230,7 @@ body {
 
 .contacts-item {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -247,23 +255,26 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
+  line-height: 1.31;
   text-decoration: none;
   color: inherit;
 }
 
 .filter-form-title {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .filter-form-control {
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 1.28;
 }
 
 .filter-form-control-text {
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.33;
   text-transform: lowercase;
   opacity: 0.3;
 }
@@ -271,7 +282,7 @@ body {
 .filter-form-input {
   font-family: inherit;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
@@ -288,7 +299,7 @@ body {
 .select-control {
   font-family: inherit;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   background-color: #ffffff;
 }
 
@@ -306,14 +317,24 @@ body {
 
 .card-title {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   font-weight: 700;
   color: #000000;
 }
 
+.card-type {
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+.card-price {
+  font-size: 18px;
+  line-height: 1.17;
+}
+
 .card-rating {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -321,7 +342,7 @@ body {
 
 .pagination-link {
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.8;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -337,7 +358,7 @@ body {
 
 .pagination-text {
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18;
   text-align: center;
   color: #000000;
 }
