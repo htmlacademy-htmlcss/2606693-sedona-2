@@ -39,6 +39,9 @@ img {
 }
 
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.25;
@@ -636,20 +639,28 @@ main {
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-area: catalog;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 212px 1fr repeat(3, auto);
+  gap: 16px 20px;
   width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
   background-color: #ffffff;
 }
 
 .card-link {
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
@@ -659,6 +670,7 @@ main {
 }
 
 .card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 1.17;
   font-weight: 700;
@@ -666,16 +678,35 @@ main {
 }
 
 .card-type {
+  margin: 0;
   font-size: 18px;
   line-height: 1.17;
+  overflow-wrap: anywhere;
 }
 
 .card-price {
+  justify-self: end;
+  margin: 0;
   font-size: 18px;
   line-height: 1.17;
+  overflow-wrap: anywhere;
+}
+
+.card-details {
+  padding-block: 8px;
+}
+
+.card-fav {
+  padding-block: 8px;
+}
+
+.card-stars {
+  margin: 0;
 }
 
 .card-rating {
+  margin: 0;
+  padding-block: 9px 8px;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
