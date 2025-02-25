@@ -27,12 +27,12 @@
           </ul>
           <ul class="user-nav-list">
             <li class="user-nav-item">
-              <a class="user-nav-link" href="#">
+              <a class="user-nav-link user-nav-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="user-nav-item">
-              <a class="user-nav-link" href="#">
+              <a class="user-nav-link user-nav-link-fav" href="#">
                 <span class="visually-hidden">Гостиниц в избранном:</span>
                 <span class="user-nav-badge">12</span>
               </a>
@@ -45,7 +45,7 @@
       </header>
 
       <main>
-        <section class="filter">
+        <div class="filter">
           <h1 class="page-heading">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -63,15 +63,15 @@
               <ul class="filter-form-list">
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="pool-box" type="checkbox" name="pool" checked>
-                  <label class="filter-form-control" for="pool-box">Бассейн</label>
+                  <label class="filter-form-control filter-form-control-box" for="pool-box">Бассейн</label>
                 </li>
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="parking-box" type="checkbox" name="parking" checked>
-                  <label class="filter-form-control" for="parking-box">Парковка</label>
+                  <label class="filter-form-control filter-form-control-box" for="parking-box">Парковка</label>
                 </li>
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="wifi-box" type="checkbox" name="wifi">
-                  <label class="filter-form-control" for="wifi-box">Wi-Fi</label>
+                  <label class="filter-form-control filter-form-control-box" for="wifi-box">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -80,35 +80,37 @@
               <ul class="filter-form-list">
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="hotel-radio" type="radio" name="housing-type" value="hotel" checked>
-                  <label class="filter-form-control" for="hotel-radio">Гостиница</label>
+                  <label class="filter-form-control filter-form-control-radio" for="hotel-radio">Гостиница</label>
                 </li>
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="motel-radio" type="radio" name="housing-type" value="motel">
-                  <label class="filter-form-control" for="motel-radio">Мотель</label>
+                  <label class="filter-form-control filter-form-control-radio" for="motel-radio">Мотель</label>
                 </li>
                 <li class="filter-form-item">
                   <input class="filter-form-input" id="apartments-radio" type="radio" name="housing-type" value="apartments">
-                  <label class="filter-form-control" for="apartments-radio">Апартаменты</label>
+                  <label class="filter-form-control filter-form-control-radio" for="apartments-radio">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-form-group">
               <legend class="filter-form-title">Стоимость, ₽:</legend>
-              <label class="filter-form-control">
-                <span class="filter-form-control-text">От</span>
-                <input class="filter-form-input-cost " id="cost-field-min" type="number" name="cost-field-min" min="0" max="12000" step="1" value="0">
-              </label>
-              <label class="filter-form-control">
-                <span class="filter-form-control-text">До</span>
-                <input class="filter-form-input-cost" id="cost-field-max" type="number" name="cost-field-max" min="0" max="12000" step="1" value="9000">
-              </label>
+              <p class="filter-form-range-group">
+                <label class="filter-form-range-control">
+                  <span class="filter-form-range-text">От</span>
+                  <input class="filter-form-range-input filter-form-range-input-min" id="cost-field-min" type="number" name="cost-field-min" min="0" max="12000" step="1" value="0">
+                </label>
+                <label class="filter-form-range-control">
+                  <span class="filter-form-range-text">До</span>
+                  <input class="filter-form-range-input filter-form-range-input-max" id="cost-field-max" type="number" name="cost-field-max" min="0" max="12000" step="1" value="9000">
+                </label>
+              </p>
             </fieldset>
             <div class="filter-form-buttons">
-              <button class="filter-form-button button button-secondary" type="submit">Применить</button>
-              <button class="filter-form-button button" type="reset">Сбросить</button>
+              <button class="filter-form-button button button-large button-secondary" type="submit">Применить</button>
+              <button class="filter-form-button button button-large" type="reset">Сбросить</button>
             </div>
           </form>
-        </section>
+        </div>
         <section class="catalog">
           <h2 class="section-heading">Найдено гостиниц:&nbsp;38</h2>
           <select class="select-control" aria-label="Сортировка">
@@ -222,11 +224,11 @@
         </section>
         <section class="subscription">
           <h2 class="section-heading">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="subheading">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+          <p class="subheading">Только полезная информация и&nbsp;никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
             <input class="subscription-input" id="subscription-field" name="subscription" type="email" required>
-            <button class="subscription-button button button-secondary" type="submit">Подписаться</button>
+            <button class="subscription-button button button-large button-secondary" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
