@@ -105,6 +105,17 @@
                   <input class="filter-form-range-input filter-form-range-input-max" id="cost-field-max" type="number" name="cost-field-max" min="0" max="12000" step="1" value="9000" placeholder="12000">
                 </label>
               </p>
+              <div class="filter-form-range-slider range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 75%">
+                    <button class="range-toggle range-toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
             </fieldset>
             <div class="filter-form-buttons">
               <button class="filter-form-button button button-large button-secondary" type="submit">Применить</button>
@@ -225,7 +236,7 @@
         </section>
         <section class="subscription">
           <h2 class="section-heading">Подпишитесь на&nbsp;рассылку</h2>
-          <p class="subheading">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
+          <p class="subheading">Только полезная информация и&nbsp;никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
             <input class="subscription-input" id="subscription-field" name="subscription" type="email" placeholder="example@domain.com" required>
