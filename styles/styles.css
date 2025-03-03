@@ -482,6 +482,7 @@ main {
 }
 
 .search {
+  padding-inline: 70px;
   padding-block: 96px;
   text-align: center;
 }
