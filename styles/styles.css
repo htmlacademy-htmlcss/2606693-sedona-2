@@ -169,7 +169,6 @@ img {
   column-gap: 28px;
   padding-inline: 70px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .site-logo {
@@ -297,6 +296,7 @@ main {
 }
 
 .hero {
+  padding-inline: 70px;
   padding-block: 51px 82px;
   background-color: rgba(117, 97, 87, 0.8);
   background-image: url("../images/decor/section-background/hero-divider.svg"), url("../images/decor/section-background/hero.jpg");
@@ -313,7 +313,6 @@ main {
 
 .advantages {
   padding-top: 69px;
-  background-color: #ffffff;
 }
 
 .advantages .section-heading {
@@ -406,7 +405,6 @@ main {
 
 .recommendations {
   padding-top: 64px;
-  background-color: #ffffff;
 }
 
 .recommendations .section-heading {
@@ -486,7 +484,6 @@ main {
 .search {
   padding-block: 96px;
   text-align: center;
-  background-color: #ffffff;
 }
 
 .search .section-heading {
@@ -503,9 +500,9 @@ main {
 }
 
 .subscription {
+  padding-inline: 70px;
   padding-block: 96px 104px;
   text-align: center;
-  background-color: #ffffff;
 }
 
 .subscription .section-heading {
@@ -589,7 +586,6 @@ main {
   gap: 28px;
   padding-inline: 70px;
   padding-block: 45px 35px;
-  background-color: #ffffff;
 }
 
 .social-list {
@@ -1021,7 +1017,6 @@ main {
   column-gap: 70px;
   padding-inline: 70px;
   padding-block: 50px 60px;
-  background-color: #ffffff;
 }
 
 .catalog .section-heading {
