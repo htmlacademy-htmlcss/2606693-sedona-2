@@ -576,8 +576,6 @@ main {
 }
 
 .subscription-input::placeholder {
-  font-family: inherit;
-  font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   opacity: 0;
 }
