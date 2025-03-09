@@ -342,8 +342,7 @@ main {
 
 .advantages-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 400px;
+  grid-template-columns: 1fr;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -353,8 +352,8 @@ main {
 }
 
 .advantages-item-illustrated {
+  grid-template-columns: repeat(3, 1fr);
   grid-column: span 3;
-  width: 1200px;
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -365,7 +364,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 400px;
   padding: 32px 85px;
   box-sizing: border-box;
 }
@@ -388,7 +386,6 @@ main {
 .advantages-item-image {
   display: block;
   grid-column: span 2;
-  width: 800px;
 }
 
 .advantages-item-title {
@@ -439,7 +436,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 400px;
   padding: 78px 85px;
   min-height: 385px;
   box-sizing: border-box;
