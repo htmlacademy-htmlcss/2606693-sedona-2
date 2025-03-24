@@ -871,8 +871,10 @@ main {
 }
 
 .filter-form-input {
-  display: inline-flex;
+  width: 20px;
+  height: 20px;
   margin: 0;
+  background-color: var(--color-lightest);
   appearance: none;
 }
 
@@ -884,39 +886,27 @@ main {
   opacity: 0.3;
 }
 
-.filter-form-input::before {
-  content: "";
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-  background-color: var(--color-lightest);
-}
-
-.filter-form-input[type="checkbox"]::before {
+.filter-form-input[type="checkbox"] {
   border-radius: 4px;
 }
 
-.filter-form-input[type="radio"]::before {
+.filter-form-input[type="radio"] {
   border-radius: 50%;
   border: 5px solid var(--color-lightest);
 }
 
-.filter-form-input[type="checkbox"]:checked::before {
+.filter-form-input[type="checkbox"]:checked {
   background-image: url("../images/decor/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 13px 11px;
 }
 
-.filter-form-input[type="radio"]:checked::before {
+.filter-form-input[type="radio"]:checked {
   background-color: var(--color-accent-800);
 }
 
 .filter-form-control {
-  position: relative;
   font-size: 18px;
   line-height: 1.28;
 }
