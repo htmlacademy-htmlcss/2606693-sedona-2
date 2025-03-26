@@ -119,8 +119,8 @@
           <h2 class="section-heading">Подпишитесь на&nbsp;рассылку</h2>
           <p class="subheading">Только полезная информация и&nbsp;никакого спама,<br>честное&nbsp;бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
             <input class="subscription-input" id="subscription-field" type="email" name="subscription" placeholder="example@domain.com" required>
+            <label class="subscription-control" for="subscription-field">Ваш e-mail</label>
             <button class="subscription-button button button-large button-secondary" type="submit">Подписаться</button>
           </form>
         </section>
@@ -153,9 +153,6 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть модальное окно</span>
-          </button>
           <section class="modal-content">
             <h2 class="section-heading">Поиск гостиницы в&nbsp;Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -170,7 +167,6 @@
                 <span class="search-form-message">На&nbsp;эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="search-form-group-half">
-                <label class="search-form-label" for="adults">Взрослые:</label>
                 <div class="search-form-stepper stepper">
                   <button class="stepper-button stepper-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить число взрослых мест</span>
@@ -180,15 +176,9 @@
                     <span class="visually-hidden">Увеличить число взрослых мест</span>
                   </button>
                 </div>
+                <label class="search-form-label" for="adults">Взрослые:</label>
               </div>
               <div class="search-form-group-half">
-                <label class="search-form-label" for="kids">Дети:</label>
-                <span class="search-form-tooltip tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно. </span>
-                </span>
                 <div class="search-form-stepper stepper">
                   <button class="stepper-button stepper-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить число детских мест</span>
@@ -198,10 +188,20 @@
                     <span class="visually-hidden">Увеличить число детских мест</span>
                   </button>
                 </div>
+                <label class="search-form-label" for="kids">Дети:</label>
+                <span class="search-form-tooltip tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно. </span>
+                </span>
               </div>
               <button class="search-form-button button button-secondary button-large" type="submit">Найти</button>
             </form>
           </section>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
         </div>
       </div>
     </div>
