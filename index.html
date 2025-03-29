@@ -41,7 +41,7 @@
               </a>
             </li>
             <li class="user-nav-item">
-              <a class="user-nav-link button button-primary" href="#">Хочу сюда!</a>
+              <a class="user-nav-link button button-primary button-large" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -179,6 +179,12 @@
                 <label class="search-form-label" for="adults">Взрослые:</label>
               </div>
               <div class="search-form-group-half">
+                <span class="search-form-tooltip tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно. </span>
+                </span>
                 <div class="search-form-stepper stepper">
                   <button class="stepper-button stepper-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить число детских мест</span>
@@ -189,12 +195,6 @@
                   </button>
                 </div>
                 <label class="search-form-label" for="kids">Дети:</label>
-                <span class="search-form-tooltip tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно. </span>
-                </span>
               </div>
               <button class="search-form-button button button-secondary button-large" type="submit">Найти</button>
             </form>
