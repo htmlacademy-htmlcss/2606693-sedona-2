@@ -12,7 +12,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="site-logo" href="index.html">
           <img class="site-logo-image" src="images/content/site-logo.svg" width="140" height="70" alt="Логотип сайта о городе Седона. На логотипе: мост, синее небо и горы.">
         </a>
@@ -47,7 +47,7 @@
         </nav>
       </header>
 
-      <main>
+      <main data-test="main">
         <div class="filter">
           <h1 class="page-heading">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -60,7 +60,7 @@
               <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
-          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter-form-group">
               <legend class="filter-form-title">Инфраструктура:</legend>
               <ul class="filter-form-list">
@@ -126,7 +126,7 @@
             </div>
           </form>
         </div>
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="section-heading">Найдено гостиниц:&nbsp;38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option class="select-option" value="cheap">Сначала дешёвые</option>
@@ -237,7 +237,7 @@
             </li>
           </ul>
         </section>
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="section-heading">Подпишитесь на&nbsp;рассылку</h2>
           <p class="subheading">Только полезная информация и&nbsp;никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -248,20 +248,20 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Группа Vkontakte</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-link-tg" href="https://t.me/htmlacademy" target="_blank">
+            <a class="social-link social-link-tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Канал в Telegram</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-link-yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="social-link social-link-yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Канал в Youtube</span>
             </a>
           </li>
@@ -269,7 +269,7 @@
         <address class="contacts">
           <a class="contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <a class="site-author" href="https://htmlacademy.ru/" target="_blank">
+        <a class="site-author" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
           <span class="visually-hidden">Разработчик сайта: HTML Academy</span>
         </a>
       </footer>

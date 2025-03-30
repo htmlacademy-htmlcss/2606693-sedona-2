@@ -336,7 +336,7 @@ img {
 
 .user-nav-badge {
   grid-row: 1 / -1;
-  grid-column: 3/ 5;
+  grid-column: 3 / 5;
   justify-self: end;
   align-self: start;
   min-width: 20px;
@@ -631,8 +631,8 @@ main {
 }
 
 .subscription-input::placeholder {
-  color: color-mix(in srgb, var(--color-darkest), transparent 40%);
   font-weight: 400;
+  color: color-mix(in srgb, var(--color-darkest), transparent 40%);
   opacity: 0;
 }
 
@@ -1245,6 +1245,15 @@ main {
   text-decoration: none;
 }
 
+.card-link:hover,
+.card-link:focus-visible {
+  opacity: 0.8;
+}
+
+.card-link:active {
+  opacity: 0.6;
+}
+
 .card-image {
   display: block;
   width: 300px;
@@ -1281,10 +1290,10 @@ main {
 
 .card-stars::before {
   content: "";
+  height: 17px;
   background-image: url("../images/decor/star.svg");
   background-repeat: repeat-x;
   background-size: 24px 17px;
-  height: 17px;
 }
 
 .card-stars-one::before {
@@ -1539,8 +1548,8 @@ main {
 }
 
 .search-form-tooltip {
-  align-self: center;
   flex-shrink: 0;
+  align-self: center;
   margin-right: auto;
 }
 
@@ -1567,6 +1576,7 @@ main {
   position: absolute;
   left: 50%;
   z-index: 2;
+  transform: translateX(-50%);
   display: none;
   width: 256px;
   margin-top: 14px;
@@ -1580,7 +1590,6 @@ main {
   background-color: var(--color-dark-gray-500);
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 color-mix(in srgb, var(--color-darkest), transparent 70%);
-  transform: translateX(-50%);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1698,8 +1707,8 @@ main {
 }
 
 .search-form-group-half .search-form-label {
-  align-self: center;
   order: -1;
+  align-self: center;
 }
 
 .search-form-button {
