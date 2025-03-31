@@ -1173,6 +1173,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  max-width: 272px;
   margin: 0;
   padding: 0;
   list-style-type: none;
