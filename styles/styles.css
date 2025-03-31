@@ -1171,6 +1171,7 @@ main {
 .display-list {
   grid-area: view;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
