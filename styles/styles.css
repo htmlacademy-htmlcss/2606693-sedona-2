@@ -355,7 +355,7 @@ img {
   background-color: var(--color-alternate-600);
 }
 
-main {
+.content {
   flex-grow: 1;
 }
 
