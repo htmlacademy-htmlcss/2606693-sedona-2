@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Олег Власов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2606693).
-* Наставник: `Неизвестно`.
+- Студент: [Олег Власов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2606693).
+- Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/id85590).
+- Проект: [Мой проект Седона](https://chlvk.github.io/2606693-sedona-2/).
 
 ---
 
