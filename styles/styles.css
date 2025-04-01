@@ -225,6 +225,7 @@ img {
 .site-nav-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 550px;
   margin: 0;
   margin-right: auto;
   padding: 0;
